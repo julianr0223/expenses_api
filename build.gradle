@@ -22,3 +22,10 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+//jar {
+//	archiveName("bank-account.jar")
+//	manifest {
+//		attributes 'Main-Class': 'co.com.julianr0223.BankAccount.BankAccountApplication'
+//	}
+//}
