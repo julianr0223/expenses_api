@@ -1,8 +1,9 @@
-package co.com.julianr0223.BankAccount.DataBuilders;
+package co.com.julianr0223.ExpensesTraker.DataBuilders;
 
-import co.com.julianr0223.BankAccount.Entities.Expense;
+import co.com.julianr0223.ExpensesTraker.Entities.Expense;
 
-import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
 
 public class ExpenseDataBuilder {
 
@@ -20,5 +21,12 @@ public class ExpenseDataBuilder {
         Expense expense = new Expense(this.detail, this.amount);
         expense.setId(this.id);
         return expense;
+    }
+
+    public List<Expense> buildArray() {
+        return Arrays.asList(
+                new Expense(this.detail, this.amount),
+                new Expense(this.detail, this.amount)
+        );
     }
 }

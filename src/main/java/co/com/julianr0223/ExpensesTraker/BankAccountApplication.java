@@ -1,4 +1,4 @@
-package co.com.julianr0223.BankAccount;
+package co.com.julianr0223.ExpensesTraker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
