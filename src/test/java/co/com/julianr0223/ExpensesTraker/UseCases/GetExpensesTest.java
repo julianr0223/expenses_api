@@ -10,7 +10,7 @@ import org.mockito.Mockito;
 
 import java.util.List;
 
-public class GetExpensesTest {
+class GetExpensesTest {
 
     private GetExpenseUseCase getExpenseUseCase;
     private ExpensiveService expensiveService;
@@ -22,7 +22,7 @@ public class GetExpensesTest {
     }
 
     @Test
-    public void getExpensesWhenThereAreExpenses() {
+    void getExpensesWhenThereAreExpenses() {
         List<Expense> actual = new ExpenseDataBuilder().buildArray();
         Mockito.when(this.expensiveService.get()).thenReturn(actual);
         List<Expense> expectedExpenses = getExpenseUseCase.getExpenses();
