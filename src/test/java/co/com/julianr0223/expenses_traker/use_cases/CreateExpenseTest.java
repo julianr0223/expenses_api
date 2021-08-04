@@ -1,15 +1,15 @@
-package co.com.julianr0223.ExpensesTraker.UseCases;
+package co.com.julianr0223.expenses_traker.use_cases;
 
-import co.com.julianr0223.ExpensesTraker.DataBuilders.ExpenseDataBuilder;
-import co.com.julianr0223.ExpensesTraker.Entities.Expense;
-import co.com.julianr0223.ExpensesTraker.Repositories.ExpensiveService;
+import co.com.julianr0223.expenses_traker.DataBuilders.ExpenseDataBuilder;
+import co.com.julianr0223.expenses_traker.entities.Expense;
+import co.com.julianr0223.expenses_traker.repositories.ExpensiveService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-public class CreateExpenseTest {
+class CreateExpenseTest {
     private ExpensiveService expensiveService;
     private CreateExpensiveUseCase createExpenseUseCase;
 
@@ -21,7 +21,7 @@ public class CreateExpenseTest {
     }
 
     @Test
-    public void insertExpenseIsOk() {
+    void insertExpenseIsOk() {
         Expense newExpense = new Expense("Ex1", 200000d);
         Mockito.when(this.expensiveService.save(newExpense)).thenReturn(new ExpenseDataBuilder().build());
         Expense expenseSeved = createExpenseUseCase.create(newExpense);

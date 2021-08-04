@@ -1,12 +1,11 @@
-package co.com.julianr0223.ExpensesTraker.Repositories;
+package co.com.julianr0223.expenses_traker.repositories;
 
-import co.com.julianr0223.ExpensesTraker.Entities.Expense;
+import co.com.julianr0223.expenses_traker.entities.Expense;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import java.util.Arrays;
 import java.util.List;
 
 @Service

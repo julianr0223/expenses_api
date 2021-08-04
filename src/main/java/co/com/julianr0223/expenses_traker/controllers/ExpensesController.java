@@ -1,9 +1,9 @@
-package co.com.julianr0223.ExpensesTraker.controllers;
+package co.com.julianr0223.expenses_traker.controllers;
 
-import co.com.julianr0223.ExpensesTraker.Entities.Expense;
-import co.com.julianr0223.ExpensesTraker.Repositories.ExpensiveRepository;
-import co.com.julianr0223.ExpensesTraker.UseCases.CreateExpensiveUseCase;
-import co.com.julianr0223.ExpensesTraker.UseCases.GetExpenseUseCase;
+import co.com.julianr0223.expenses_traker.entities.Expense;
+import co.com.julianr0223.expenses_traker.repositories.ExpensiveRepository;
+import co.com.julianr0223.expenses_traker.use_cases.CreateExpensiveUseCase;
+import co.com.julianr0223.expenses_traker.use_cases.GetExpenseUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

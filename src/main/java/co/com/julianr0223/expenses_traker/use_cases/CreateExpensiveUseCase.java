@@ -1,7 +1,7 @@
-package co.com.julianr0223.ExpensesTraker.UseCases;
+package co.com.julianr0223.expenses_traker.use_cases;
 
-import co.com.julianr0223.ExpensesTraker.Entities.Expense;
-import co.com.julianr0223.ExpensesTraker.Repositories.ExpensiveService;
+import co.com.julianr0223.expenses_traker.entities.Expense;
+import co.com.julianr0223.expenses_traker.repositories.ExpensiveService;
 import org.springframework.stereotype.Service;
 
 @Service

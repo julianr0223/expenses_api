@@ -1,6 +1,6 @@
-package co.com.julianr0223.ExpensesTraker.DataBuilders;
+package co.com.julianr0223.expenses_traker.DataBuilders;
 
-import co.com.julianr0223.ExpensesTraker.Entities.Expense;
+import co.com.julianr0223.expenses_traker.entities.Expense;
 
 import java.util.Arrays;
 import java.util.List;
