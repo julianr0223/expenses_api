@@ -14,12 +14,12 @@ import java.util.Arrays;
 import java.util.List;
 
 @SpringBootApplication
-public class BankAccountApplication {
+public class ExpensesTrakerApplication {
 
-	private static final Logger log = LoggerFactory.getLogger(BankAccountApplication.class);
+	private static final Logger log = LoggerFactory.getLogger(ExpensesTrakerApplication.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(BankAccountApplication.class, args);
+		SpringApplication.run(ExpensesTrakerApplication.class, args);
 	}
 
 	@Bean
